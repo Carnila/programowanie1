@@ -1,0 +1,13 @@
+function sumTwoNumbers(first, second) {
+    console.log(first + second); // side effect - efekt uboczny
+} //  jezeli funkcje maja side effecty -> impure function (funkcje nieczyste)
+function substract(first, second) /* argumenty */ {
+    return first - second;
+}
+//sumTwoNumbers(10, 1);
+// console.log(substract(10, 1)); 
+let money = 100;
+money = substract(money, 10);
+console.log(money);
+money = substract(money, 40);
+console.log(money);
